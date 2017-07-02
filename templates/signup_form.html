@@ -1,0 +1,48 @@
+<! DOCTYPE html>
+
+<html>
+    <body>
+        <!--ADD HEADING AND INPUTS-->
+        <!--#add forms for:-->
+        <!--#username-->
+        <form action="/signup" method="post">
+            <label for="user-name">Username</label>
+            <input id="user_name" type='text' name="user-name" />
+            
+
+
+       <!-- #ERROR for leaving username empty-->
+       <!--#ERROR for invalid username (no spaces, must be >3 characters, <20 characters)-->
+       <!-- #preserve user input if there is an error-->
+
+        <!--#password with type=password-->
+            <label for="password">Password</label>
+            <input id="password" type='password' name="password" />
+        <!--#leaving password empty-->
+        <!--#invalid password (same as username)-->
+        <!--#passwords don't match-->
+
+
+        <!--#verify password-->
+            <label for="password2">Verify Password</label>
+            <input id="password2" type='password' name="verify-password" />
+        <!--#leaving password verify empty-->
+        <!--#invalid password (same as username)-->
+        <!--#passwords don't match-->
+
+
+        <!--#email (optional)-->
+            <label for="email">Email (optional)</label>
+        <!--#if email isn't valid- should have one @ symbol, one . and between 3 and 20 characters-->
+        <!--#preserve user input if there is an error-->
+
+
+        <!--#submit button-->
+            <input type="submit" />
+
+
+        <!--#redirect to welcome page-->
+        
+        </form>
+    </body>
+</html>
