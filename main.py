@@ -9,7 +9,7 @@ app.config['DEBUG'] = True
 #template_dir = os.path.join(os.path.dirname(__file__), 'templates')
 #jinja_env = jinja2.Environment(loader = jinja2.FileSystemLoader(template_dir))
 
-@app.route("/")
+@app.route("/signup")
 def index():
     return render_template('signup_form.html')
 
@@ -51,7 +51,7 @@ password2_error = ''
 email_error = ''
 
 #define validation form
-@app.route("/signup", methods=['POST', 'GET'])
+@app.route("/signup", methods=['POST'])
 def signup():
     #get input from form
     input_username = request.form['username']
@@ -94,6 +94,6 @@ def signup():
 
 app.route('/welcome')
 def welcome():
-    return render_template('welcome.html', username = username)
+    return render_template('welcome.html')
    
 app.run()
